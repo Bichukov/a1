@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <style type="text/css">
+        .s1 {
+            padding: 5px;
+            background: #E5D3BD;
+            border: 2px solid #E81E25;
+            width: 300px;
+            display: inline-block;
+
+        }
+
+        .s2 {
+            padding: 5px;
+            background: #E5D3BD;
+            border: 2px solid #E81E25;
+            width: 300px;
+            display: inline-block;
+
+            margin-left: -4pt;
+
+
+        }
+
+        .s3 {
+            padding: 5px;
+            background: #E5D3BD;
+            border: 2px solid #eb0b12;
+            width: 300px;
+            display: inline-block;
+
+            margin-left: -4pt;
+
+
+        }
+
+        P.line {
+            border-left: 1px dotted red;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <table border="0" align="left" width="300">
+        <tr>
+            <td>
+                <div class="s1">
+                    <p class="line"><b>1.</b>Составить алгоритм: если введенное число больше 7, то вывести “Привет”</p>
+                    <br>
+                    <p><b>Введите ваше число (Please input is your a number):</b>
+                        <input id="numb" onkeydown="if (event.keyCode == 107 || event.keyCode == 187|| event.keyCode == 191.) return false"
+                            title="Только числа. Пример: 11 или -5 или 0 и тд">
+                    </p>
+                    <input type="submit" onclick="myFunction()" value="Отправить">
+                    <input type="reset" onclick="clearBox('demo')">
+                    <p id="demo"></p>
+                </div>
+            </td>
+        </tr>
+        <table border="0" align="left" width="300">
+            <tr>
+                <td>
+                    <div class="s2">
+                        <p class="line"><b>2.</b>Составить алгоритм: если введенное имя совпадает с Вячеслав,
+                            то вывести “Привет, Вячеслав”, если нет, то вывести "Нет такого имени"</p>
+                        <p><b>Введите ваше имя (Please input is your First name):</b>
+                            <input id="numb2">
+                        </p>
+                        <input type="submit" onclick="myFunction2()" value="Отправить">
+                        <input type="reset" onclick="clearBox('demo2')">
+
+                        <p id="demo2"></p>
+                    </div>
+                </td>
+            </tr>
+            <table border="0" align="left" width="300">
+                <tr>
+                    <td>
+                        <div class="s3">
+                            <p class="line"><b>3.</b>Составить алгоритм: на входе есть числовой массив,
+                                необходимо вывести элементы массива кратные 3</p>
+                            <b>Размер массива</b>
+                            <input id="numb3">
+                            <input type="submit" onclick="myFunction3()" value="Отправить">
+                            <p><b>Массив</b>
+                            <p id="n3"></p>
+                            <input id="n4">
+                            <b>
+                                <p id="demo3"></p>
+                            </b>
+
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+
+
+
+
+            <script src="task.js"></script>
+
+</body>
+
+</html>
